@@ -36,7 +36,7 @@ if not path.exists(output_dir):
     mkdir(output_dir)
 
 for company in track(companies):
-    cik = pad_cik(company[6])  # Assuming CIK is in the second column (index 1)
+    cik = pad_cik(company[6]) 
     company_dir = f"{output_dir}/{company[1]}"
     
     # Create a directory for the company if it doesn't exist
